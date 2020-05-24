@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+	<!-- Start CounterUp2 -->
+	<script>
+		// 
+		///*!
+		//* Counter-Up2 - counterup2-1.0.1.min.js
+		//* Counter-Up2 is a lightweight module that counts up to a targeted number when the number becomes visible
+		//* 
+		//* Copyright 2019, Benjamin Intal https://github.com/bfintal/Counter-Up2/blob/master/LICENSE
+		//* Released under the MIT License
+		//*
+		//* Date: Jan 3, 2019
+		!function(t,e){"object"==typeof exports&&"object"==typeof module?module.exports=e():"function"==typeof define&&define.amd?define([],e):"object"==typeof exports?exports.counterUp=e():t.counterUp=e()}(window,function(){return function(t){var e={};function n(r){if(e[r])return e[r].exports;var o=e[r]={i:r,l:!1,exports:{}};return t[r].call(o.exports,o,o.exports,n),o.l=!0,o.exports}return n.m=t,n.c=e,n.d=function(t,e,r){n.o(t,e)||Object.defineProperty(t,e,{enumerable:!0,get:r})},n.r=function(t){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(t,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(t,"__esModule",{value:!0})},n.t=function(t,e){if(1&e&&(t=n(t)),8&e)return t;if(4&e&&"object"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(n.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:t}),2&e&&"string"!=typeof t)for(var o in t)n.d(r,o,function(e){return t[e]}.bind(null,o));return r},n.n=function(t){var e=t&&t.__esModule?function(){return t.default}:function(){return t};return n.d(e,"a",e),e},n.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},n.p="",n(n.s=0)}([function(t,e,n){"use strict";n.r(e),n.d(e,"divideNumbers",function(){return o}),n.d(e,"hasComma",function(){return i}),n.d(e,"isFloat",function(){return u}),n.d(e,"decimalPlaces",function(){return l});e.default=function(t){var e=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},n=e.action,i=void 0===n?"start":n,u=e.duration,l=void 0===u?1e3:u,a=e.delay,c=void 0===a?16:a,d=e.lang,f=void 0===d?void 0:d;if("stop"!==i){if(r(t),/[0-9]/.test(t.innerHTML)){var s=o(t.innerHTML,{duration:l||t.getAttribute("data-duration"),lang:f||document.querySelector("html").getAttribute("lang")||void 0,delay:c||t.getAttribute("data-delay")});t._countUpOrigInnerHTML=t.innerHTML,t.innerHTML=s[0],t.style.visibility="visible",t.countUpTimeout=setTimeout(function e(){t.innerHTML=s.shift(),s.length?(clearTimeout(t.countUpTimeout),t.countUpTimeout=setTimeout(e,c)):t._countUpOrigInnerHTML=void 0},c)}}else r(t)};var r=function(t){clearTimeout(t.countUpTimeout),t._countUpOrigInnerHTML&&(t.innerHTML=t._countUpOrigInnerHTML,t._countUpOrigInnerHTML=void 0),t.style.visibility=""},o=function(t){for(var e=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},n=e.duration,r=void 0===n?1e3:n,o=e.delay,i=void 0===o?16:o,u=e.lang,l=void 0===u?void 0:u,a=r/i,c=t.toString().split(/(<[^>]+>|[0-9.][,.0-9]*[0-9]*)/),d=[],f=0;f<a;f++)d.push("");for(var s=0;s<c.length;s++)if(/([0-9.][,.0-9]*[0-9]*)/.test(c[s])&&!/<[^>]+>/.test(c[s])){var p=c[s],v=/[0-9]+,[0-9]+/.test(p);p=p.replace(/,/g,"");for(var g=/^[0-9]+\.[0-9]+$/.test(p),y=g?(p.split(".")[1]||[]).length:0,b=d.length-1,m=a;m>=1;m--){var T=parseInt(p/a*m,10);g&&(T=parseFloat(p/a*m).toFixed(y),T=parseFloat(T).toLocaleString(l)),v&&(T=T.toLocaleString(l)),d[b--]+=T}}else for(var M=0;M<a;M++)d[M]+=c[s];return d[d.length]=t.toString(),d},i=function(t){return/[0-9]+,[0-9]+/.test(t)},u=function(t){return/^[0-9]+\.[0-9]+$/.test(t)},l=function(t){return u(t)?(t.split(".")[1]||[]).length:0}}])});
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+	<!-- End CounterUp2 -->
+
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	
+	<!-- Start Bootstrap 4 -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<!-- End Bootstrap 4 -->
+
+	<!-- Start AOS -->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<!-- End AOS -->
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+</head>
+<body data-spy="scroll" data-target="#navbar" data-offset="0">
+	<header>
+		<nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+	      <!-- <a class="navbar-brand" href="#">Comparte tu regalo</a> -->
+	      	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	        	<span class="navbar-toggler-icon"></span>
+	      	</button>
+	      	<div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+	        	<ul class="navbar-nav">
+	          		<li class="nav-item">
+	            		<a class="nav-link" href="#home">Inicio</a>
+	          		</li>
+		          	<li class="nav-item">
+		            	<a class="nav-link" href="#section1">Seccion 1</a>
+		          	</li>
+	          		<li class="nav-item">
+	            		<a class="nav-link" href="#section2">Seccion 2</a>
+	          		</li>
+	          		<li class="nav-item">
+	            		<a class="nav-link" href="#section3">Seccion 3</a>
+	          		</li>
+	          		<li class="nav-item">
+	            		<a class="nav-link" href="#section4">Seccion 4</a>
+	          		</li>
+	        	</ul>
+	      	</div>
+	    </nav>
+    </header>
+	<div id="home" style="height: 100vh">
+    	<div class="flex-center flex-column">
+      		<!-- <h1 class="text-hide animated fadeIn mb-4" style="background-image: url('https://mdbootstrap.com/img/logo/mdb-transparent-250px.png'); width: 250px; height: 90px;">MDBootstrap</h1> -->
+      		<img src="img/logo.png" data-aos="fade-up" data-aos-duration="3000">
+      		<!-- <h5 class="animated fadeIn mb-3">Thank you for using our product. We're glad you're with us.</h5>
+      		<p class="animated fadeIn text-muted">MDB Team</p> -->
+    	</div>
+  	</div>
+	<div class="container">
+		<section id="section1">
+			<div class="row justify-content-center">
+      			<div class="col-12 col-sm-6" data-aos="fade-right" data-aos-duration="1500">
+	        		<h3>¿Quiénes somos?</h3>
+
+	        		<p>Catalina, Manuela y Esteban, amigos con el propósito de generar una causa sin fines de lucro para aportar en la situación de emergencia sanitaria actual a los que más lo necesitan.</p>
+	      		</div>
+	      		<div class="col-12 col-sm-6" data-aos="fade-left" data-aos-duration="1500">
+	        		<h3>¿Qué nos motivó?</h3>
+
+	        		<p>Vivimos como chilenos un gran desafío presentado por el COVID-19. Queremos aportar un granito de arena en la solución para que familias en riesgo vayan a dormir sabiendo que podrán cubrir sus necesidades básicas al día siguiente. Viralicemos el granito motivando a vivir un cumpleaños diferente.</p>
+	      		</div>
+	      		<div class="col-12 col-sm-6" data-aos="fade-right" data-aos-duration="1500">
+			        <h3>¿Cómo funciona Comparto Mi Cumple?</h3>
+
+			        <p>Cada año recibimos regalos de familiares o amigos para nuestros cumpleaños..</p>
+
+			        <p>¿Y si el mismo dinero que ellos destinan para un obsequio material hoy se designa a una familia de sector vulnerable afectada por la situación actual?</p>
+
+	        		<p>En “Comparto mi Cumple” damos la posibilidad que el cumpleañero decida “donar” su regalo mediante la compra de una caja solidaria de alimentación e higiene. En simples pasos, el festejado, sus familiares o amigos podrán colaborar juntos a cubrir las necesidades básicas de una familia que hoy le urge más que nunca.</p>          
+	      		</div>
+	      		<div class="col-12 col-sm-6" data-aos="fade-left" data-aos-duration="1500">
+			        <h3>¿Cuáles son los pasos a seguir?</h3>
+			        <ol>
+			          	<li>Cumpleañero decide compartir su cumpleaños</li>
+
+			          	<li>Informa a sus amigos o familiares de su decisión (deseo)</li>
+
+			          	<li>Ellos contactan a Comparto Mi Cumple para efectuar la donación de caja/s de insumos básicos mediante transferencia bancaria.</li>
+
+			          	<li>Una vez realizado el depósito, Comparto Mi Cumple entrega la donación a familia/s beneficiadas.</li>
+
+	          			<li>El cumpleañero recibe tarjeta, foto, video de la donación efectuada y agradece a sus queridos.</li>
+	        		</ol>
+	      		</div>
+	    	</div>
+		</section>
+		<section id="section2">
+			<div class="row">
+		      	<div class="col-12" data-aos="fade-right" data-aos-duration="1500">
+		        	<h3>Comparte tu regalo aquí (datos para aportar)</h3>
+		        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		        	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		        	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		        	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		        	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		        	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		      	</div>
+		 	</div>
+		 	<div class="row">
+		      	<div class="col-12 text-center mt-3 mb-3" data-aos="fade-right" data-aos-duration="1500">
+		        	<h3>Opciones de canasta</h3>
+		      	</div>
+		  	</div>
+		    <div class="row text-center">
+	      		<div class="col-12 col-sm-6 col-md-3 mt-2" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="0">
+	      			<img src="img/box.jpg" width="50%">
+	      			<h5>Caja 1</h5>
+	      			<ul>
+	      				<li>Item 1</li>
+	      				<li>Item 2</li>
+	      				<li>Item 3</li>
+	      				<li>Item 4</li>
+	      				<li>Item 5</li>
+	      			</ul>
+	      		</div>
+	      		<div class="col-12 col-sm-6 col-md-3 mt-2" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+	      			<img src="img/box.jpg" width="50%">
+	      			<h5>Caja 2</h5>
+	      			<ul>
+	      				<li>Item 1</li>
+	      				<li>Item 2</li>
+	      				<li>Item 3</li>
+	      				<li>Item 4</li>
+	      				<li>Item 5</li>
+	      			</ul>
+	      		</div>
+	      		<div class="col-12 col-sm-6 col-md-3 mt-2" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+	      			<img src="img/box.jpg" width="50%">
+	      			<h5>Caja 3</h5>
+	      			<ul>
+	      				<li>Item 1</li>
+	      				<li>Item 2</li>
+	      				<li>Item 3</li>
+	      				<li>Item 4</li>
+	      				<li>Item 5</li>
+	      			</ul>
+	      		</div>
+	      		<div class="col-12 col-sm-6 col-md-3 mt-2" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">
+	      			<img src="img/box.jpg" width="50%">
+	      			<h5>Caja 4</h5>
+	      			<ul>
+	      				<li>Item 1</li>
+	      				<li>Item 2</li>
+	      				<li>Item 3</li>
+	      				<li>Item 4</li>
+	      				<li>Item 5</li>
+	      			</ul>
+	      		</div>		      	
+	    	</div>
+		</section>
+		<section id="section3">
+			<div class="row">
+	      		<div class="col-12">
+	        
+		      	</div>
+		    </div>
+		</section>
+		<section id="section4">
+			<div class="row justify-content-center">
+				<div class="col-12 col-sm-3 text-center">
+					<h3>Donados</h3>
+					<h1 class="counter">1500</h1>
+				</div>
+				<div class="col-12 col-sm-3 text-center">
+					<h3>Entregados</h3>
+					 <h1 class="counter">1013</h1>
+				</div>
+		    </div>
+		</section>	    
+  	</div>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<p class=" text-center">Web page developed by <span id="developer">C. Vargas</span>.</p>
+				</div>
+			</div>			
+		</div>
+	</footer>	
+</body>
+	<script>
+		$('.navbar-nav>li>a').on('click', function(){
+	    	$('.navbar-collapse').collapse('hide');
+		});
+	</script>	
+	<script>
+	  	AOS.init();
+	</script>
+	<script>
+		$(document).ready(function() {
+			jQuery(function ($) {
+	    	 	"use strict";
+	    		var counterUp = window.counterUp["default"]; // import counterUp from "counterup2"
+		 		var $counters = $(".counter");
+	    		/* Start counting, do this on DOM ready or with Waypoints. */
+				$counters.each(function (ignore, counter) {
+					var waypoint = new Waypoint( {
+						element: $(this),
+						handler: function() { 
+							counterUp(counter, {
+								duration: 1500,
+								delay: 10
+							}); 
+							this.destroy();
+						},
+						offset: 'bottom-in-view',
+					} );
+				});
+			});
+	 	});
+	</script>
+</html>
