@@ -1,5 +1,6 @@
 body {
-    position: relative; 
+    position: relative;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .flex-center {
@@ -39,6 +40,21 @@ body {
 #section4{
     padding-top: 56px;
     /*height: 90vh;*/
+}
+
+#section1 h3{
+    color: #0495c3;
+    font-weight: bold;
+}
+
+#section2 h3{
+    color: #bfdc0b;
+    font-weight: bold;
+}
+
+#section4 h3{
+    color: #e4075a;
+    font-weight: bold;
 }
 
 #developer {
