@@ -32,9 +32,9 @@ body {
     margin-bottom: 0
 }
 
-#section1, #section2, #section3{
+#home, #section1, #section2, #section3, #section4, #section5, #section6{
     padding-top: 56px;
-    /*height: 100vh;*/
+    height: 100vh;
 }
 
 #section4{
@@ -71,4 +71,40 @@ body {
 ul {
     list-style-position: inside;
     padding-left: 0;
+}
+
+.social{
+    font-size: 1.5em;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.social a:hover{
+        text-decoration: none;
+}
+
+#headingOne{
+    background: rgb(228, 109, 137, 0.4);
+}
+
+#headingTwo{
+    background: rgb(208, 130, 45, 0.4);
+}
+
+#headingThree{
+    background: rgb(222, 193, 37, 0.4);
+}
+
+#headingFour{
+    background: rgb(30, 177, 88, 0.4);
+}
+
+#section5 .btn{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#section5 .btn:hover{
+    text-decoration: none;
 }
