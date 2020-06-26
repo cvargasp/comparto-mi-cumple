@@ -1,6 +1,12 @@
 body {
     position: relative;
     font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.5rem;
+    /*text-align: justify;*/
+}
+
+nav{
+    font-size: 1rem;
 }
 
 .flex-center {
@@ -32,9 +38,11 @@ body {
     margin-bottom: 0
 }
 
-#home, #section1, #section2, #section3, #section4, #section5, #section6{
-    padding-top: 56px;
-    height: 100vh;
+@media (min-width: 580px) {
+    #home, #section1, #section2, #section3, #section4, #section5, #section6{
+        padding-top: 56px;
+        height: 100vh;
+        }
 }
 
 #section4{
@@ -74,7 +82,7 @@ ul {
 }
 
 .social{
-    font-size: 1.5em;
+    font-size: 1.5rem;
     list-style-type: none;
     text-decoration: none;
 }
@@ -107,4 +115,14 @@ ul {
 
 #section5 .btn:hover{
     text-decoration: none;
+}
+
+.card{
+    border: 0;
+}
+
+@media (min-width: 580px) {
+    .prueba{
+        height: 100%!important;
+    }
 }
