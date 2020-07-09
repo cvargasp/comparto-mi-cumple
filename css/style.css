@@ -25,6 +25,12 @@ nav{
     }
 }
 
+@media (max-width: 579px) {
+    #section6{
+        height: 50vh;
+    }
+}
+
 #section1 h3{
     color: #0495c3;
     font-weight: bold;
