@@ -1,4 +1,5 @@
 body {
+    position: relative;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 1.5rem;
     /*text-align: justify;*/
@@ -8,21 +9,45 @@ nav{
     font-size: 1rem;
 }
 
-#home{
-	height: 100vh;
+.flex-center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 100%
+}
+
+.flex-center p {
+    margin: 0
+}
+
+.flex-center ul {
+    text-align: center
+}
+
+.flex-center ul li {
+    margin-bottom: 1rem
+}
+
+.flex-center ul li:last-of-type {
+    margin-bottom: 0
 }
 
 @media (min-width: 580px) {
     #home, #section1, #section2, #section3, #section4, #section5, #section6{
         padding-top: 56px;
         height: 100vh;
-    }
+        }
 }
 
-@media (min-width: 580px) {
-    .container-fluid{
-        height: calc(100vh - 56px);
-    }
+#section4{
+    padding-top: 56px;
+    /*height: 90vh;*/
 }
 
 #section1 h3{
@@ -40,15 +65,30 @@ nav{
     font-weight: bold;
 }
 
-#section4{
-    padding-top: 56px;
-    /*height: 90vh;*/
+#developer {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.list{
+    text-align: left;
+    display:inline-block;
 }
 
 /*Center bullet on list*/
 ul {
     list-style-position: inside;
     padding-left: 0;
+}
+
+.social{
+    font-size: 1.5rem;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.social a:hover{
+        text-decoration: none;
 }
 
 #headingOne{
@@ -79,4 +119,10 @@ ul {
 
 .card{
     border: 0;
+}
+
+@media (min-width: 580px) {
+    .prueba{
+        height: 100%!important;
+    }
 }
