@@ -55,22 +55,22 @@
 		        		<a class="nav-link" href="#">INICIO <span class="sr-only">(current)</span></a>
 		      		</li>
 		      		<li class="nav-item">
-		        		<a class="nav-link" href="#section1">NOSOTROS</a>
+		        		<a class="nav-link" href="#section1" data-toggle="collapse">NOSOTROS</a>
 		      		</li>
 		      		<li class="nav-item">
-		        		<a class="nav-link" href="#section2">COMO COMPARTIR</a>
+		        		<a class="nav-link" href="#section2" data-toggle="collapse">COMO COMPARTIR</a>
 		      		</li>
 		      		<li class="nav-item">
-		        		<a class="nav-link" href="#section3">DONAR</a>
+		        		<a class="nav-link" href="#section3" data-toggle="collapse">DONAR</a>
 		      		</li>
 		      		<li class="nav-item">
-		        		<a class="nav-link" href="#section4">TRANSPARENCIA</a>
+		        		<a class="nav-link" href="#section4" data-toggle="collapse">TRANSPARENCIA</a>
 		      		</li>
 		      		<li class="nav-item">
-		        		<a class="nav-link" href="#section5">PREGUNTAS FRECUENTES</a>
+		        		<a class="nav-link" href="#section5" data-toggle="collapse">PREGUNTAS FRECUENTES</a>
 		      		</li>
 		      		<li class="nav-item">
-		        		<a class="nav-link" href="#section6">CONTACTO</a>
+		        		<a class="nav-link" href="#section6" data-toggle="collapse">CONTACTO</a>
 		      		</li>
 		    	</ul>
 		  	</div>
@@ -297,5 +297,10 @@
 				});
 			});
 	 	});
+	</script>
+	<script type="text/javascript">
+		$('.navbar-nav>li>a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+});
 	</script>
 </html>
