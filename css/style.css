@@ -86,3 +86,13 @@ ul {
 .card{
     border: 0;
 }
+
+.social{
+    font-size: 1.5rem;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.social a:hover{
+        text-decoration: none;
+}
