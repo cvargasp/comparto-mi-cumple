@@ -8,15 +8,16 @@ nav{
     font-size: 1rem;
 }
 
-#home{
-	height: 100vh;
-}
-
 @media (min-width: 580px) {
-    #home, #section1, #section2, #section3, #section4, #section5, #section6{
+     #section2, #section4{
         padding-top: 56px;
         height: 100vh;
     }
+}
+
+#home, #section1, #section3, #section5, #section6{
+    padding-top: 56px;
+    height: 100vh;
 }
 
 @media (min-width: 580px) {
@@ -85,4 +86,24 @@ ul {
 
 .card{
     border: 0;
+}
+
+.social{
+    font-size: 1.5rem;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.social a:hover{
+        text-decoration: none;
+}
+
+.products{
+	font-size: 1.1rem;
+}
+
+.products-box{
+    box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,.5);
 }
