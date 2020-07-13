@@ -233,3 +233,7 @@ dt span{
     font-weight: 400;
     font-style: italic;
 }
+
+.email{
+    letter-spacing: -2px;
+}
