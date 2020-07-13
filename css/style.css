@@ -68,26 +68,31 @@ ul {
     padding-left: 0;
 }
 
+#headingOne, #headingTwo, #headingThree, #headingFour{
+    border-radius: 5px;
+}
+
 #headingOne{
-    background: rgb(228, 109, 137, 0.4);
+    background: rgb(228, 58, 99);
 }
 
 #headingTwo{
-    background: rgb(208, 130, 45, 0.4);
+    background: rgb(212, 132, 45);
 }
 
 #headingThree{
-    background: rgb(222, 193, 37, 0.4);
+    background: rgb(222, 195, 36);
 }
 
 #headingFour{
-    background: rgb(30, 177, 88, 0.4);
+    background: rgb(27, 179, 88);
 }
 
 #section5 .btn{
-    color: black;
+    color: white;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 700;
+    font-size: 1.5rem;
 }
 
 #section5 .btn:hover{
@@ -116,4 +121,115 @@ ul {
     box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.15);
     border-radius: 10px;
     border: 1px solid rgba(0,0,0,.5);
+}
+
+ #section2 ol {
+   list-style: none;
+   counter-reset: item;
+ }
+
+ #section2 ol > li {
+   counter-increment: item;
+   margin-bottom: 5px;
+ }
+
+ #section2 ol > li:before {
+    margin-right: 10px;
+    content: counter(item);
+    background: #E43A63;
+    border-radius: 100%;
+    color: white;
+    width: 1.5em;
+    text-align: center;
+    display: inline-block;
+    /*position: absolute;*/
+    /*left: 0;
+    top: 10px;
+    font-size: 2.5rem;
+    color: white;*/
+ }
+
+#section2 ol > li.numberOne:before {
+    background: #03B7B1;
+}
+
+#section2 ol > li.numberTwo:before {
+    background: #1BB358;
+}
+
+#section2 ol > li.numberThree:before {
+    background: #DEC324;
+}
+
+#section2 ol > li.numberFour:before {
+    background: #D4842D;
+}
+
+#section2 ol > li.numberFive:before {
+    background: #E43A63;
+}
+
+/****************************
+********* SECTION 3 *********
+*****************************/
+
+.lastSteps {
+    counter-reset: my-badass-counter;
+}
+
+.lastSteps dt {
+    position: relative;
+    padding: 4px 0 10px 0;
+}
+
+.lastSteps dt:before {
+    content: counter(my-badass-counter);
+    counter-increment: my-badass-counter;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    font-size: 2.5rem;
+    color: white;
+}
+
+.lastSteps dt, .lastSteps dd {
+    padding-left: 35px;
+    color: white;
+}
+
+.lastSteps dd{
+    font-size: 1.3rem;
+}
+
+#lastStepOne, #lastStepTwo, #lastStepThree, #lastStepFour, #lastStepFive{
+    padding-left: 10px;
+    border-radius: 3px;
+    margin: 8px;
+    line-height : 30px;
+}
+
+#lastStepOne{
+    background: rgb(228, 58, 99);
+}
+
+#lastStepTwo{
+    background: rgb(212, 132, 45);
+}
+
+#lastStepThree{
+    background: rgb(222, 195, 36);
+}
+
+#lastStepFour{
+    background: rgb(27, 179, 88);
+}
+
+#lastStepFive{
+    background: rgb(3, 183, 177);
+}
+
+dt span{
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-style: italic;
 }
