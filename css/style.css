@@ -1,6 +1,10 @@
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
     overflow-x: hidden;
     /*text-align: justify;*/
 }
@@ -215,19 +219,6 @@ dt span{
     font-style: italic;
 }
 
-.email{
-    font-size: 1.3rem;
-    letter-spacing: -2px;
-}
-
-.view-more{
-    background: #e8edec;
-}
-
-.view-more:hover{
-    background: #dce0e0;
-}
-
 /****************************
 ********* SECTION 4 *********
 *****************************/
@@ -285,4 +276,17 @@ dt span{
 
 #section2 .stepFive:before {
     background: #E43A63;
+}
+
+.email{
+    font-size: 1.4rem;
+    letter-spacing: -2px;
+}
+
+.view-more{
+    background: #e8edec;
+}
+
+.view-more:hover{
+    background: #dce0e0;
 }
