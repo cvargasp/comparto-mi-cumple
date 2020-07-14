@@ -1,6 +1,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
+    overflow-x: hidden;
     /*text-align: justify;*/
 }
 
@@ -149,26 +150,6 @@ ul {
     color: white;*/
  }
 
-#section2 ol > li.numberOne:before {
-    background: #03B7B1;
-}
-
-#section2 ol > li.numberTwo:before {
-    background: #1BB358;
-}
-
-#section2 ol > li.numberThree:before {
-    background: #DEC324;
-}
-
-#section2 ol > li.numberFour:before {
-    background: #D4842D;
-}
-
-#section2 ol > li.numberFive:before {
-    background: #E43A63;
-}
-
 /****************************
 ********* SECTION 3 *********
 *****************************/
@@ -235,5 +216,73 @@ dt span{
 }
 
 .email{
+    font-size: 1.3rem;
     letter-spacing: -2px;
+}
+
+.view-more{
+    background: #e8edec;
+}
+
+.view-more:hover{
+    background: #dce0e0;
+}
+
+/****************************
+********* SECTION 4 *********
+*****************************/
+
+#steps {
+    counter-reset: counter;
+}
+
+#steps dt {
+    position: relative;
+    padding: 4px 0 10px 0;
+    font-weight: 400;
+}
+
+#steps dt:before {
+    content: counter(counter);
+    counter-increment: counter;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    font-size: 1.5rem;
+    background: #E43A63;
+    border-radius: 100%;
+    color: white;
+    width: 1.5em;
+    text-align: center;
+    display: inline-block;
+}
+
+#steps dt, #steps dd {
+    padding-left: 50px;
+}
+
+#stepOne, #stepTwo, #stepThree, #stepFour, #stepFive{
+    padding-left: 10px;
+    border-radius: 3px;
+    margin: 8px;
+}
+
+#section2 .stepOne:before {
+    background: #03B7B1;
+}
+
+#section2 .stepTwo:before {
+    background: #1BB358;
+}
+
+#section2 .stepThree:before {
+    background: #DEC324;
+}
+
+#section2 .stepFour:before {
+    background: #D4842D;
+}
+
+#section2 .stepFive:before {
+    background: #E43A63;
 }
