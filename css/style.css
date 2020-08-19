@@ -258,6 +258,10 @@ dt span{
     margin: 8px;
 }
 
+.counter{
+    font-size: 3rem;
+}
+
 #section2 .stepOne:before {
     background: #03B7B1;
 }
